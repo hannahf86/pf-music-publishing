@@ -32,8 +32,12 @@ export default async function Home() {
   const products = await getProducts();
   //console.log(products)
 
+  const styles = {
+    container: 'grid grid-cols-fluid gap-16',
+  }
+
   return (
-    <main >
+    <main className={styles.container}>
       <div>
         {products.map((product) => (
           <Product {...product} />
