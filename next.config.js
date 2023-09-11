@@ -5,7 +5,7 @@ const nextConfig = {
   },
   // TO ENABLE IMAGES FROM SIGN IN
   images: {
-    domains: ['lh3.googleusercontent.com']
+    domains: ['lh3.googleusercontent.com', 'files.stripe.com']
   }
 }
 
