@@ -18,7 +18,7 @@ export default function Nav({ user }: Session) {
 
     return (
         <nav className={styles.nav}>
-            <h1>I am present</h1>
+            <h1>I am the nav!</h1>
 
             <ul>
                 {/* IF THE USER IS NOT SIGNED IN */}
