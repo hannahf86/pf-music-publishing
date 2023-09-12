@@ -1,6 +1,6 @@
 
 import Stripe from "stripe"
-import Product from "./Components/Product"
+import ProductCard from "./Components/ProductCard"
 
 // GET PRODUCT LIST
 const getProducts = async () => {
@@ -33,14 +33,14 @@ export default async function Home() {
   //console.log(products)
 
   const styles = {
-    container: 'grid grid-cols-fluid gap-16',
+    container: 'grid grid-cols-fluid gap-16 mx-12 justify-center',
   }
 
   return (
-    <main className={styles.container}>
-      <div>
+    <main >
+      <div className={styles.container}>
         {products.map((product) => (
-          <Product {...product} />
+          <ProductCard {...product} />
         ))}
       </div>
     </main>
