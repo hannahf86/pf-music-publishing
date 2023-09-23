@@ -13,6 +13,10 @@ module.exports = {
       gridTemplateColumns: {
         fluid: 'repeat(auto-fit, minmax(15rem, 1fr))',
       },
+      fontFamily: {
+        'Aviano Royale': ['aviano-royale', 'serif'],
+        'Raleway': ['Raleway', 'sans-serif'],
+      }
     },
   },
   plugins: [],

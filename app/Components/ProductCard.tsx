@@ -13,24 +13,21 @@ export default function ProductCard({ id, name, image, price }: ProductType) {
 
     return (
         <>
-            <Link href={{
-                pathname: '/${id}',
-                query: { id, name, image, price }
-            }}>
-                <div className={styles.container}>
-                    <Image
-                        src={image}
-                        alt={name}
-                        width={400}
-                        height={400}
-                    />
-                    <div>
-                        <h1 className={styles.title}>{name}</h1>
-                        <h2 className={styles.price}>
-                            {price !== null ? formatPrice(price) : 'Please contact our staff'}</h2>
-                    </div>
+
+            <div className={styles.container}>
+                <Image
+                    src={image}
+                    alt={name}
+                    width={400}
+                    height={400}
+                />
+                <div>
+                    <h1 className={styles.title}>{name}</h1>
+                    <h2 className={styles.price}>
+                        {price !== null ? formatPrice(price) : 'Please contact our staff'}</h2>
                 </div>
-            </Link>
+            </div>
+
         </>
     )
 }
