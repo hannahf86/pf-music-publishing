@@ -31,7 +31,6 @@ export default function Nav({ user }: Session) {
 
             <div className={styles.navItems}>
                 <Link href='/Scenes/About'><h3>ABOUT</h3></Link>
-                <Link href='/Scenes/Products'><h3>PRODUCTS</h3></Link>
                 <Link href='/Scenes/Services'><h3>SERVICES</h3></Link>
                 <Link href='/Scenes/Contact'><h3>CONTACT</h3></Link>
             </div>
