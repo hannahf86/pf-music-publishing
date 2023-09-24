@@ -13,9 +13,9 @@ import React from 'react'
 export default function Nav({ user }: Session) {
 
     const styles = {
-        nav: 'flex justify-between items-center py-6 px-32  bg-[#081B30]',
-        navItems: 'flex justify-between py-8 px-12 w-7/12 ml-40 text-white tracking-widest',
-        button: 'bg-white text-[#081B30] py-2 px-4 rounded-lg',
+        nav: 'flex justify-between items-center py-6 px-12 bg-[#081B30]',
+        navItems: 'flex justify-center w-4/12 absolute right-60 text-white tracking-widest text-sm',
+        button: 'bg-white text-[#081B30] py-2 px-4 rounded-lg text-sm',
         image: 'rounded-full',
     }
 
@@ -30,9 +30,8 @@ export default function Nav({ user }: Session) {
             </div>
 
             <div className={styles.navItems}>
-                <Link href='/Scenes/About'><h3>ABOUT</h3></Link>
-                <Link href='/Scenes/Services'><h3>SERVICES</h3></Link>
-                <Link href='/Scenes/Contact'><h3>CONTACT</h3></Link>
+                <Link href='/Scenes/Products'><h3 className='px-12'>PRODUCTS</h3></Link>
+                <Link href='/Scenes/Contact'><h3 className='px-12'>CONTACT</h3></Link>
             </div>
 
             <ul>
@@ -42,7 +41,7 @@ export default function Nav({ user }: Session) {
                         <button
                             className={styles.button}
                             onClick={() => signIn()}>
-                            Sign in</button>
+                            <p>Sign in</p></button>
                     </li>
 
                 )}

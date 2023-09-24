@@ -1,6 +1,7 @@
 
 import Stripe from "stripe"
 import ProductCard from "app/Components/ProductCard"
+import Filter from "@/app/Components/Filter/page"
 
 // GET PRODUCT LIST
 const getProducts = async () => {
@@ -38,6 +39,7 @@ export default async function Home() {
 
     return (
         <main >
+            <Filter />
             <div className={styles.container}>
                 {products.map((product) => (
                     <ProductCard {...product} />

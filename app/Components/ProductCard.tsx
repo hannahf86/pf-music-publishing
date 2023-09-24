@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function ProductCard({ id, name, image, price }: ProductType) {
 
     const styles = {
-        container: 'hover:scale-110',
+        container: 'mt-20 hover:scale-110',
         title: 'text-center text-slate-700 text-lg font-bold pt-2',
         price: 'text-center text-slate-700 text-md',
     }

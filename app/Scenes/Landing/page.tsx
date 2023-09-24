@@ -12,13 +12,13 @@ const Landing: React.FC = () => {
 
   const styles = {
     heroBackground: 'bg-[#607A96] m-8 rounded-lg p-8 grid grid-col-3 ',
-    heroWelcome: 'text-4xl ml-60 mb-8 text-[#081B30]',
-    heroText: 'text-7xl ml-40 text-[#081B30] mb-8',
+    heroWelcome: 'text-4xl ml-28 mb-8 text-[#081B30]',
+    heroText: 'text-7xl ml-16 text-[#081B30] ',
   }
-
 
   return (
     <div>
+      {/* DESKTOP */}
       <div className={styles.heroBackground}>
         <div className='col-start-1 col-span-2 self-center'>
           <h2 className={styles.heroWelcome}>Welcome to</h2>
@@ -30,6 +30,7 @@ const Landing: React.FC = () => {
         </div>
       </div>
 
+      {/* PRODUCT SECTION */}
       <div className='mt-20'>
         <Products />
       </div>
